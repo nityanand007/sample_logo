@@ -1,11 +1,8 @@
-document.addEventListener('click', function(event) {
-    var angle = 15;
-    var content = document.querySelector('.content');
-    var centerX = window.innerWidth / 2;
-    var centerY = window.innerHeight / 2;
-    var offsetX = event.clientX - centerX;
-    var offsetY = event.clientY - centerY;
-
-    content.style.transformOrigin = `${offsetX}px ${offsetY}px`;
-    content.style.transform = `rotate(${angle}deg)`;
-});
+document.addEventListener("DOMContentLoaded", function() {
+    var follower = document.getElementById("follower");
+    document.addEventListener("mousemove", function(e) {
+      follower.style.left = e.pageX + "px";
+      follower.style.top = e.pageY + "px";
+    });
+  });
+  

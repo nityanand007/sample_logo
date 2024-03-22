@@ -1,14 +1,11 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
+body{
+    background: #000;
 }
-
-.content {
+#follower {
+    width: 125px;
+    height: 121px;
+    background-image:url(../assets/giflogo.gif);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center center;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s ease;
-}
+    pointer-events: none; 
+    transition: all 0.2s ease; 
+  }
